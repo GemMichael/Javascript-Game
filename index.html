@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="practice.css">
     <style>
         .hover-zoom {
             transition: transform 0.3s ease;
@@ -14,124 +15,97 @@
         }
     </style>
 </head>
+<body>
 
+    <!--Nav-->
+    <nav class="unique">
+        <body class="bg-white dark:bg-gray-900 transition-colors duration-500">
+            <div class="container mx-auto p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <div class="grid grid-cols-3 gap-4">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/GemMichael" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span> -Github</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://discord.com/channels/@me/1171772682874929253" target="_blank">
+                                        <i class="fa-brands fa-discord"></i>
+                                        <span> -Discord</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <label for="themeSwitch" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <input type="checkbox" id="themeSwitch" class="sr-only">
+                            <div id="switch" class="block bg-gray-600 dark:bg-gray-400 w-14 h-8 rounded-full"></div>
+                            <div class="dot absolute left-1 top-1 bg-white dark:bg-gray-900 w-6 h-6 rounded-full transition"></div>
+                        </div>
+                        <div class="ml-3 text-gray-700 dark:text-gray-300 font-medium">Dark Mode</div>
+                    </label>
+                </div>
+                <h1 class="text-3xl text-blue-600 font-bold text-center mb-8">Game Hub🎮</h1>
+                <p class="text-lg text-blue-500 text-center dark:text-gray-300">Let's relax ourselves through games.</p>
+            </div>
+        </body>
+    </nav>
+    
+    <!--End of navbar-->
 
-<header>
-    <body class="bg-white dark:bg-gray-900 transition-colors duration-500">
-        <div class="container mx-auto p-4">
-            <div class="flex justify-between items-center mb-4">
-                <div class="flex items-center">
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="bg-white rounded-full overflow-hidden shadow-md hover-zoom w-16 h-16">
-                            <a href="https://github.com/GemMichael" target="_blank"><img src="https://banner2.cleanpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg" alt="GitHub" class="w-full h-full object-cover"></a>
-                        </div>
-                        <div class="bg-white rounded-full overflow-hidden shadow-md hover-zoom w-16 h-16">
-                            <a href="https://discord.com/channels/@me/1171772682874929253" target="_blank"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="w-full h-full object-cover"></a>
-                        </div>
+    <!--Main-->
+    <main>
+        <section>
+            <div class="container mx-auto p-4">
+                <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
+                        <a href="memory.html" target="_blank">
+                            <img src="https://www.cokogames.com/wp-content/uploads/2020/07/airplane-memory-matching.jpg" alt="Memory card game" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
+                        <a href="number.html" target="_blank">
+                            <img src="https://gurmeet.net/Images/puzzles/number_guessing_game_transparent.png" alt="Number Guessing Game" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
+                        <a href="dice.html" target="_blank">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpoa7gN0U6u3m52i4gSEZz96bJyjD92VX2VQSlANbDpOlVjKx_nUQ8jb-qVWyUT1OYnws&usqp=CAU" alt="Roll the dice" class="w-full h-auto">
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
+                        <a href="color.html" target="_blank"><img src="https://play-lh.googleusercontent.com/BULvh9sBDaMZqyc0rXXofyXBVnESl9V6HOA8zMdmC0wEcGP2yirBikapG9zF6oMdRlM" alt="Color Guessing Game" class="w-full h-auto"></a>
                     </div>
                 </div>
-                <label for="themeSwitch" class="flex items-center cursor-pointer">
-                    <div class="relative">
-                        <input type="checkbox" id="themeSwitch" class="sr-only">
-                        <div id="switch" class="block bg-gray-600 dark:bg-gray-400 w-14 h-8 rounded-full"></div>
-                        <div class="dot absolute left-1 top-1 bg-white dark:bg-gray-900 w-6 h-6 rounded-full transition"></div>
-                    </div>
-                    <div class="ml-3 text-gray-700 dark:text-gray-300 font-medium">Dark Mode</div>
-                </label>
             </div>
-            <h1 class="text-3xl text-blue-600 font-bold text-center mb-8">Game Hub🎮</h1>
-            <p class="text-lg text-blue-500 text-center dark:text-gray-300">Let's relax ourselves through games.</p>
-        </div>
-    </body>
-</header>
+        </section>
+    </main>
 
+    <!--End of main-->
 
+    <!--Footer-->
 
-
-
-<section>
-    <div class="container mx-auto p-4">
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
-            <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
-                <a href="memory.html" target="_blank">
-                    <img src="https://www.cokogames.com/wp-content/uploads/2020/07/airplane-memory-matching.jpg" alt="Memory card game" class="w-full h-auto">
-                </a>
+    <footer>
+        <footer id="footer" class="fixed bottom-0 w-full text-blue-600 p-4">
+            <div class="container mx-auto">
+                <p class="text-center">All rights reserved.</p>
             </div>
-            <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
-                <a href="number.html" target="_blank">
-                    <img src="https://gurmeet.net/Images/puzzles/number_guessing_game_transparent.png" alt="Number Guessing Game" class="w-full h-auto">
-                </a>
-            </div>
-            <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
-                <a href="dice.html" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpoa7gN0U6u3m52i4gSEZz96bJyjD92VX2VQSlANbDpOlVjKx_nUQ8jb-qVWyUT1OYnws&usqp=CAU" alt="Roll the dice" class="w-full h-auto">
-                </a>
-            </div>
-            <div class="bg-white rounded-lg overflow-hidden shadow-md hover-zoom">
-                <a href="color.html" target="_blank"><img src="https://play-lh.googleusercontent.com/BULvh9sBDaMZqyc0rXXofyXBVnESl9V6HOA8zMdmC0wEcGP2yirBikapG9zF6oMdRlM" alt="Color Guessing Game" class="w-full h-auto"></a>
-            </div>
-        </div>
-    </div>
-</section>
-    
-
-    
-    <footer id="footer" class="fixed bottom-0 w-full text-blue-600 p-4">
-        <div class="container mx-auto">
-            <p class="text-center">All rights reserved.</p>
-        </div>
+        </footer>
     </footer>
 
-    <script>
-        const themeSwitch = document.getElementById('themeSwitch');
-        const body = document.body;
-        const switchButton = document.getElementById('switch');
-        const footer = document.getElementById('footer');
+    <!--End of footer-->
 
-        themeSwitch.addEventListener('change', function() {
-            if(this.checked) {
-                body.classList.add('dark');
-                body.classList.remove('bg-white');
-                body.classList.add('bg-gray-900');
-                switchButton.classList.remove('bg-gray-600');
-                switchButton.classList.add('dark:bg-gray-900');
-                switchButton.classList.remove('dark:bg-gray-400');
-                footer.classList.remove('text-blue-600');
-                footer.classList.add('text-gray-300');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                body.classList.remove('dark');
-                body.classList.add('bg-white');
-                body.classList.remove('bg-gray-900');
-                switchButton.classList.remove('dark:bg-gray-900');
-                switchButton.classList.add('bg-gray-600');
-                switchButton.classList.remove('bg-gray-400');
-                footer.classList.remove('text-gray-300');
-                footer.classList.add('text-blue-600');
-                localStorage.setItem('theme', 'light');
-            }
-        });
+   
+    <script src="script.js"></script>
+    
 
-        
-        if(localStorage.getItem('theme') === 'dark') {
-            themeSwitch.checked = true;
-            body.classList.add('dark');
-            body.classList.remove('bg-white');
-            body.classList.add('bg-gray-900');
-            switchButton.classList.remove('bg-gray-600');
-            switchButton.classList.add('dark:bg-gray-900');
-            footer.classList.remove('text-blue-600');
-            footer.classList.add('text-gray-300');
-        } else {
-            themeSwitch.checked = false;
-            body.classList.remove('dark');
-            body.classList.add('bg-white');
-            body.classList.remove('bg-gray-900');
-            switchButton.classList.remove('dark:bg-gray-900');
-            switchButton.classList.add('bg-gray-600');
-            footer.classList.remove('text-gray-300');
-            footer.classList.add('text-blue-600');
-        }
-    </script>
+
+
 </body>
 </html>
